@@ -10,7 +10,7 @@ public class MaxHeight04 {
         System.out.println("Please enter the third monk weight: ");
         int monk3 = sc.nextInt();
 
-        int max_weight = (monk1 > monk2 ? monk1 : monk2) > monk3 ? (monk1 > monk2 ? monk1 : monk2) : monk3;
+        int max_weight = Math.max((Math.max(monk1, monk2)), monk3);
         System.out.println("Max height is " + max_weight);
         sc.close();
         

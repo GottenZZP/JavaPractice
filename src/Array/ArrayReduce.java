@@ -26,5 +26,6 @@ public class ArrayReduce {
             for (int j : arr) System.out.print(j + " ");
 
         }
+        sc.close();
     }
 }

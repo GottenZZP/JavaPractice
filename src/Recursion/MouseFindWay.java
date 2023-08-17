@@ -11,7 +11,6 @@ public class MouseFindWay {
         int row = sc.nextInt();
         int col = sc.nextInt();
 
-
         int[][] map = new int[row][col];
 
         // 迷宫初始化

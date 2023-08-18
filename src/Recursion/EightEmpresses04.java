@@ -16,7 +16,7 @@ class Empresses {
         if (chessboard[7][7] != 0)
             return true;
         else {
-            
+            return false;
         }
     }
 }

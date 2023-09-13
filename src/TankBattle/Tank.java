@@ -1,15 +1,26 @@
 package TankBattle;
 
+import java.util.Vector;
+
 public class Tank {
     // 坦克的坐标
     private int x;
     private int y;
     private int direct = 0;
     private int speed = 1;
+    boolean isLive = true;
 
     public Tank(int x, int y) {
         this.x = x;
         this.y = y;
+    }
+
+    public boolean isLive() {
+        return isLive;
+    }
+
+    public void setLive(boolean live) {
+        isLive = live;
     }
 
     public int getSpeed() {
@@ -21,19 +32,23 @@ public class Tank {
     }
 
     public void moveUp() {
-        y -= speed;
+        if (y - speed >= 0)
+            y -= speed;
     }
 
     public void moveDown() {
-        y += speed;
+        if (y + speed + 60 <= 750)
+            y += speed;
     }
 
     public void moveLeft() {
-        x -= speed;
+        if (x - speed >= 0)
+            x -= speed;
     }
 
     public void moveRight() {
-        x += speed;
+        if (x + speed + 60 <= 1000)
+            x += speed;
     }
 
     public int getDirect() {

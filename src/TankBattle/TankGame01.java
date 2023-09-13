@@ -1,18 +1,18 @@
 package TankBattle;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class TankGame01 extends JFrame {
-    private MyPanel mp = null;
+    private MyPanel mp;
     public static void main(String[] args) {
         TankGame01 tankGame01 = new TankGame01();
-
     }
 
     public TankGame01() {
         // 创建面板
         mp = new MyPanel();
+        Thread thread = new Thread(mp);
+        thread.start();
         // 在JFrame画框中添加mp面板
         this.add(mp);
         // 设置画框大小

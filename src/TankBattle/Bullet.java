@@ -7,7 +7,7 @@ public class Bullet implements Runnable {
     private int x;
     private int y;
     private int direct = 0;
-    private int speed = 5;
+    private int speed = 10;
     private boolean isLive = true;
 
     public Bullet(int x, int y, int direct) {
@@ -84,8 +84,8 @@ public class Bullet implements Runnable {
                 isLive = false;
                 break;
             }
-            System.out.println("x = " + x + " y = " + y);
+//            System.out.println("x = " + x + " y = " + y);
         }
-        System.out.println("子弹线程退出");
+//        System.out.println("子弹线程退出");
     }
 }

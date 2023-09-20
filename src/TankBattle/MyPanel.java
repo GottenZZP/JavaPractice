@@ -14,14 +14,14 @@ import java.util.Vector;
 public class MyPanel extends JPanel implements KeyListener, Runnable {
     Hero hero;
     // 存放敌人坦克
-    Vector<EnemyTank> enemyTanks = new Vector<>();
+    Vector<EnemyTank> enemyTanks = new Vector<>() ;
     Vector<Tank> tanks = new Vector<>();
     // 存放爆炸图片
     // 当子弹击中坦克时加入一个Bomb对象
     Vector<Bomb> bombs = new Vector<>();
     Vector<Node> nodes;
     Vector<Wall> walls = new Vector<>();
-    int enemySize = 6;
+    int enemySize = 9;
     int wallSize = 20;
     // isWin: 0:游戏进行中 1:游戏获胜 2:游戏失败
     int isWin = 0;
